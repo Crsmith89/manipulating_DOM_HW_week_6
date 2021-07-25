@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wanted Whisky List</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+      <header>
+          <h1>Whisky List</h1>
+      </header>
+    <main>
+        <h3>Create your Whisky List</h3>
+    </main>
+    <form id="whisky-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="brand" class="primary">Brand</label>
+          <input type="text" id="brand" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="description" class="primary">Description</label>
+          <input type="text" id="description" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="region" class="primary">Region</label>
+          <select id="region">
+            <option value="" disabled selected>Select a region</option>
+            <option value="Highlands">Highlands</option>
+            <option value="Speyside">Speyside</option>
+            <option value="Islands">Islands</option>
+            <option value="Lowlands">Lowlands</option>
+            <option value="Islay">Islay</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save list"/>
+    </form>
+
+    <button id="delete-list">Delete List</button>
+
+    <h1>Whisky List</h1>
+    <ul id="whisky-list"></ul>
+  </body>
+</html>
