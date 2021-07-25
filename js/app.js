@@ -40,3 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const whiskyList = document.querySelector('#whisky-list');
     whiskyList.innerHTML = '';
   }
+
+//   Notes:
+//   By using addEventListener, when the document's DOMContentLoaded event fires, we can be guaranteed to have access to the DOM elements. At this point, the DOM is ready to be manipulated.
+
+// We can use document.querySelector to target any single element by querying its ID, class or the tag name unsing the CSS selector syntax:
+
+// An ID selector is prefixed with a # - querySelector('#my-id')
+// A class selector is prefixed with a . - querySelector('.my-class')
+// A tag selector has no prefix - querySelector('p')
